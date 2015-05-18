@@ -1,0 +1,26 @@
+[
+        {
+            "id": 1,
+            "name": "The Hunger Games",
+            "author": "Suzanne Collins",
+            "bestSellerOfMoth": 5
+        },
+        {
+            "id": 2,
+            "name": "Harry Potter and the Order of the Phoenix",
+            "author": "J.K. Rowling",
+            "bestSellerOfMoth": 5
+        },
+        {
+            "id": 3,
+            "name": "To Kill a Mockingbird ",
+            "author": "Harper Lee",
+            "bestSellerOfMoth": 5
+        },
+        {
+            "id": 4,
+            "name": "Twilight",
+            "author": "Stephenie Meyer",
+            "bestSellerOfMoth": 6
+        }
+    ]
