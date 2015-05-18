@@ -29,10 +29,9 @@ exports.getBestSellerByMoth = function(month){
 	};
 	// console.log("book not found")
 })
-	if(bestSellerOfMothArray) 
+	if(bestSellerOfMothArray)
 		console.log(bestSellerOfMothArray)
 		return bestSellerOfMothArray;
-	return "books not found in this month"
 }
 
 
