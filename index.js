@@ -2,6 +2,10 @@ var express = require('express');
 var app = express();
 var Books = require('./books_ws');
 
+app.get('/', function(req, res){
+	res.status(200)
+})
+
 app.get('/getAllBestSellersBooks', function(req, res){
 	res.json(Books.getAllBestSellers())
 })
