@@ -3,7 +3,7 @@ var app = express();
 var Books = require('./books_ws');
 
 app.get('/', function(req, res){
-	res.status(200)
+	res.status(200).send("in books exercise")
 })
 
 app.get('/getAllBestSellersBooks', function(req, res){
