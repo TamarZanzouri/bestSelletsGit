@@ -3,7 +3,7 @@ var app = express();
 var Books = require('./books_ws');
 
 app.get('/', function(req, res){
-	res.status(200).send("in books exercise")
+	res.status(200).send("<h1>welcome to best sellers inventory!!!</h1><br>to get all books add router /getAllBestSellersBooks<br>to get book by name go to router /getBookName/:bookId<br>to get all sest sellers in month got to router /getBSForMonth/:BSOfmoth")
 })
 
 app.get('/getAllBestSellersBooks', function(req, res){
