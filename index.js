@@ -7,6 +7,10 @@ app.get('/', function(req, res){
 })
 
 app.get('/getAllBestSellersBooks', function(req, res){
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "Origin, X-requested-With, Content-Type, Accept");
+	app.set('json spaces', 4);
+	res.set("Content-Type", "appliction/json");
 	res.json(Books.getAllBestSellers())
 })
 
@@ -16,6 +20,10 @@ app.param('bookId', function(req, res, next, value){
 })
 
 app.get('/getBookName/:bookId', function(req, res){
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "Origin, X-requested-With, Content-Type, Accept");
+	app.set('json spaces', 4);
+	res.set("Content-Type", "appliction/json");
 	var book_id = req.params.bookId;
 	// console.log(book_id)
 	var bookName = Books.getBookNameById(book_id)
@@ -24,11 +32,15 @@ app.get('/getBookName/:bookId', function(req, res){
 })
 
 app.param('BSOfmoth', function(req, res, next, value){
-	console.log("\nrecived moth: " + value);
+	console.log("\nrecived month: " + value);
 	next();
 })
 
 app.get('/getBSForMonth/:BSOfmoth', function(req, res){
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "Origin, X-requested-With, Content-Type, Accept");
+	app.set('json spaces', 4);
+	res.set("Content-Type", "appliction/json");
 	var BSofmonth = req.params.BSOfmoth;
 	// console.log(book_id)
 	var booksOfMoth = Books.getBestSellerByMoth(BSofmonth)
